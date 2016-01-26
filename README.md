@@ -8,3 +8,4 @@ It's primary purpose is to allow alternate clocks to be plugged in for tests.
 1. `Default`: Provides the current local time.
 2. `Fixed`: Always provides a fixed time.
 3. `Offset`: Provides the time from a different clock with the specified duration added.
+4. `In`/`DefaultIn`: Provides the time from a given clock/default clock in the given time zone.
