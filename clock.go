@@ -2,12 +2,12 @@ package clock
 
 import "time"
 
-// Clock provides access to the current local time.
+// Clock provides access to the current time.
 type Clock interface {
 	Now() time.Time
 }
 
-// Default returns a clock that provides the current local time.
+// Clock provides access to the current time in the local time zone.
 func Default() Clock {
 	return ClockFunc(time.Now)
 }
