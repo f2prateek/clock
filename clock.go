@@ -7,6 +7,7 @@ type Clock interface {
 	Now() time.Time
 }
 
+// Default returns a clock that provides the current local time.
 func Default() Clock {
 	return ClockFunc(time.Now)
 }
