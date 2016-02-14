@@ -13,7 +13,7 @@ func Default() Clock {
 }
 
 // The ClockFunc type is an adapter to allow the use of ordinary functions as
-// Clocks. If f is a function with the appropriate signature,
+// a Clock. If f is a function with the appropriate signature,
 // ClockFunc(f) is a Clock object that calls f.
 type ClockFunc func() time.Time
 
